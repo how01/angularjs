@@ -13,6 +13,9 @@ angular.module('myApp')
 			 });*/
 
 			 return promise;
+		},
+		getUserList:function(){
+			return $http({url:'data/user.json'})
 		}
 	};
 }])

@@ -39,6 +39,14 @@ angular.module('myApp',['ngRoute','myList','HIT'])
 			templateUrl: 'custom_modules/modal/modal_window.html',
 			controller: 'TabController'
 		})
+		.when('/collapsed', {
+			templateUrl: 'custom_modules/collapsed/collapsed.html',
+			controller: 'TabController'
+		})
+		.when('/table', {
+			templateUrl: 'custom_modules/table/table.html',
+			controller: 'myListController'
+		})
 		.otherwise({ redirectTo: '/' });
 }])
 .controller('ListController', ['$scope', function ($scope) {

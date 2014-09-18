@@ -10,5 +10,8 @@ angular.module('myList')
 	UserService.getListData().success(function(data){
 			$scope.items =data;	
 	});
+	UserService.getUserList().success(function(data){
+			$scope.users =data;	
+	});
 	 
 }]);

@@ -272,7 +272,10 @@ h3{
 	width: 100%;
 	border:none;
 }
-.title_line button{
+.title_line div{
+	display: inline-block;
+}
+.title_line div>button{
 	border-radius: 5px;
 	box-shadow: #D3CFCF 0px 0px 2px 2px;
 	font-size: 25px;
@@ -626,7 +629,7 @@ div.rightdirect span:before{
 .btn-wrapper button{
 	width: 175px;
 	height: 35px;
-	border-radius: 5px;
+	border-radius: 5px;d
 	background-color: #3071a9;
 	border-color: #285e8e;
 }
@@ -644,4 +647,60 @@ div.rightdirect span:before{
 	font-size: 20px;
 	border:none;
 	font-weight: bold;
+}
+
+/* collapsed*/
+.collapsed{
+	position: relative;
+	float: left;
+	margin: 40px;
+	top: 10px;
+	left: 10px;
+	width: 375px;
+	height: 145px;
+	border-radius: 7px;
+	border: 1px solid #ddd;
+	background-color: #fff;
+}
+.clp_head{
+	background-color: #f5f5f5;
+	text-align: left;
+	padding: 5px 15px;
+	border-color: #ddd;
+}
+.clp_content{
+	padding: 15px;
+}
+/**/
+.clear_float{
+	clear: both;
+}
+
+/* table*/
+.table{
+	text-align: left;
+	width: 100%;
+	position: relative;
+	background-color: #fff;
+	border: 1px solid #ADADAD;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.table-header{
+	margin-top: 20px;
+	margin-left: -1px;
+	margin-right: -1px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	width: 100%;
+	font-size: 20px;
+	color: #333;
+	background-color: #ddd;
+	border: 1px solid #ADADAD;
+}
+.table-header span{
+	padding-left: 10px;
+}
+.table tr{
+	border: 1px solid #ADADAD;
 }

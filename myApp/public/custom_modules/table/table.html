@@ -1,0 +1,21 @@
+<div class="table-header"><span>Panel heading</span></div>
+<div>
+	<table class="table">
+		<thead>
+			<tr>
+				<th> # </th>
+				<th> First Name	 </th>
+				<th> Last Name </th>
+				<th>Username </th>
+			</tr>
+		</thead>
+		<tbody>
+		<tr ng-repeat="user in users">
+			<td>{{$index}}</td>
+			<td> {{user.firstname}} </td>
+			<td> {{user.lastname}} </td>
+			<td> {{user.email}} </td>
+		</tr>
+		</tbody>
+	</table>
+</div>	
