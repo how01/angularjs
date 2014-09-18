@@ -3,7 +3,9 @@ angularjs
 
 angular front client build
 实验室项目
-项目目录介绍：
+1)项目架构 angularjs nodejs(nodemon) /ruby
+
+2)项目目录介绍：
 --myApp
   --bin  nodemon 启动脚本
   --node_modules  nodejs 依赖模块
@@ -18,4 +20,4 @@ angular front client build
   app.js 项目配置脚本
   package.json
 
-2)启动方式 cd ../bin && nodemon www  
+3)启动方式 cd ../bin && nodemon www  
