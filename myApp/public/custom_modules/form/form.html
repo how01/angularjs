@@ -1,0 +1,15 @@
+<!-- sign form-->
+		<form name="signform">
+			<div ng-form="signform_inputs">
+				<div ng-repeat="field in fields">
+					<input ng-model="field.name"
+						   ng-required="field.isRequired" 
+						   name="dynamic_input"
+							placeHolder="{{field.placeholder}}"/>
+					{{signform_inputs.dynamic_input.$invalid}}		
+					<span ng-show="signform_inputs.dynamic_input.$error.required" class="invaild">The field is required.</span>
+				</div>
+
+			</div>
+			<button type="submit" ng-disabled="signform.$invalid">submit all</button>
+		</form>

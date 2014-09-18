@@ -1,0 +1,69 @@
+/*login.css*/
+.login-dlg {
+	width: 300px;
+	height: 214px;
+	position:absolute;
+	margin-top: -107px;
+	margin-left:-150px; 
+	top: 50%;
+	left: 50%;
+	display: block;
+	border-radius: 5px;
+	background-color: #6F7ECE;
+	border-style: solid;
+	border-color: #f3f3ff;
+	border-width: 5px;
+	box-shadow: 1px 1px 10px 1px rgba(0,0,0,.6);
+	/* font */
+	font-family: verdana, 宋体, arial, georgia, helvetica, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+}
+.login-dlg div{
+	box-sizing: border-box;
+	margin-left: 10px;
+	margin-top:45px;
+	vertical-align:middle;
+	
+}
+.fix-border input{
+	border:none;
+}
+.fix-border{
+	/*background: url('radis_bg.png') no-repeat 0 0; */
+	display: inline;
+	border-width: 5px;
+	border-radius: 5px;
+}
+.fix-border input{
+	border-radius: 16px;
+	height: 23px;
+	text-align: center;
+	width: 90%;
+	margin: -10px;
+}
+.log-button{
+	position: relative;
+	width: 120px;
+	margin-top: 70px;
+	margin-left: 90px;
+	border-style: solid;
+	border-color: #f3f3ff;
+	border-width: 5px;
+	text-decoration: none;
+	background-color: #6F7ECE;
+	height: 35px;
+	border-radius: 16px;
+	cursor: pointer;
+	box-shadow: 1px 1px 10px 1px rgba(0,0,0,.6);
+}
+.log-button a{
+	margin-left: 50px;
+
+}
+.transt{
+	position: absolute;
+	transform: rotateX(-90deg) translateZ(20px);
+}

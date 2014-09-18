@@ -1,0 +1,35 @@
+<!-- main view-->
+	<div class="title_line">
+		<button> my professional site</button>
+		<div class="btn-group">
+			<ul class="btn-menu">
+				<li><a href="#">Log</a></li>
+				<li><a href="#">show</a></li>
+				<li><a href="#">go to</a></li>
+				<li><a href="#">change</a></li>
+			</ul>
+		</div>
+
+		<div class="footprint">
+			<input placeholder="Search" type="text" name="search">
+		</div>
+	</div>
+	<!-- item list -->	
+		<div  class="itemlist">
+			<div class="head-row">
+				<div class="col-10-1">id
+				</div><div class="col-10-1">name
+				</div><div class="col-10-1">money
+				</div><div class="col-10-1">date
+				</div><div class="col-10-1">location
+				</div><div class="col-10-1">info</div>
+			</div>
+			<div ng-repeat="item in items" ng-class="{even:!$even,odd:!$odd}" class="row">
+				<div class="col-10-1">{{$index}}
+				</div><div class="col-10-1">{{item.name}}
+				</div><div class="col-10-1">{{item.money}}
+				</div><div class="col-10-1">{{item.date}}
+				</div><div class="col-10-1">{{item.location}}
+				</div><div class="col-10-1">{{item.info}}</div>
+			</div>	
+		</div>
