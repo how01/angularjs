@@ -1,0 +1,54 @@
+/* tab page*/
+.tab > li{
+	display:block;
+	position: relative;
+	float: left;
+	width: 130px;
+	text-align: center;
+	line-height: 1.2;
+	padding: 10px;
+	margin-bottom: -1px;
+}
+.tab >li.active {
+	border-radius: 10px 10px 0 0;
+	color: #555;
+	cursor: default;
+	/**/
+	background-color: #CCD3CD;
+	border: 1px solid #9E9E9E;
+	border-bottom-color: transparent;
+	border-bottom-width: 2px;
+}
+.tab {
+	display: table;
+	margin-bottom: 0px;
+	border-bottom-color: #9E9E9E;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	width: 100%;
+	box-sizing:border-box;
+}
+.tab>li>a{
+	cursor: pointer;
+	position: relative;
+	display: block;
+	width: 75px;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 1;
+	left: 0;
+	right: 0;
+}
+.tab:before{
+	display: block;
+	content: "  "
+}
+
+.tagpage{
+	position: relative;
+	border-top: 1px solid #fff;
+	width: 100%;
+	height: 375px;
+	background-color: #CCD3CD;
+}
+

@@ -5,43 +5,33 @@ module.exports = function(grunt) {
 
         //Read the package.json (optional)
         pkg: grunt.file.readJSON('package.json'),
-
-        // Metadata.
-        meta: {
-            basePath: '../',
-            srcPath: '../assets/sass/',
-            deployPath: '../assets/css/'
-        },
+        
 
         banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
                 '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
                 '* Copyright (c) <%= grunt.template.today("yyyy") %> ',
 
         // Task configuration.
-        sass: {
+        concat: {
             dist: {
-                files: {
-                    '<%= meta.deployPath %>style.css': '<%= meta.srcPath %>style.scss'
-                },
-                options: {
-                    sourcemap: 'true'
-                }
+                files: [
+                  { src: ['app.css','custom_modules/**/*.css'], dest: 'app-all.css'}
+                ],
+                options: {sourcemap: 'true'}
             }
         },
         watch: {
             scripts: {
-                files: [
-                    '<%= meta.srcPath %>/**/*.scss'
-                ],
-                tasks: ['sass']
+                files: ['app.css','custom_modules/**/*.css'],
+                tasks: ['concat']
             }
         }
     });
 
     // These plugins provide necessary tasks.
-    grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     // Default task.
-    grunt.registerTask('default', ['sass']);
+    grunt.registerTask('default', ['concat','watch']);
 };

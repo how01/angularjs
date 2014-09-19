@@ -1,0 +1,149 @@
+
+/* dropdown menu*/
+.dropmenu{
+	z-index: 1000;
+	position: relative;
+	float: left;
+	margin-left: 0px;
+	padding-top: 10px;
+	padding-left: 0px;
+	display: none;
+
+}
+.dropmenu li{
+	border-top-color: #41DBFF;	
+	border-bottom-color: #143557;
+	cursor: pointer;
+	border-width: 1px 0px 1px 0px;
+	font-size: 15px;
+	vertical-align: middle;
+}
+.dropmenu li:first-child{
+	border-radius: 5px 5px 0px 0px;
+}
+.dropmenu li:last-child{
+	border-bottom-width: 0px;
+	border-radius: 0 0px 5px 5px;
+}
+.showsubmenu{
+	display: block;
+}
+.down{
+	border-top-width: 0px;
+	border-bottom: 4px solid;
+}
+.menu>li:hover{ 
+	background-color: #469DFC;
+}
+
+.caret {
+	color: #E1EDFA;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin-left: 2px;
+	vertical-align: middle;
+	border-top: 4px solid;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+}
+
+/* header css */
+#header{
+	height: 38px;
+}
+
+/* head menu*/
+.menu{
+	background-color: #B4C7C9;
+	width: 100%;
+	padding-left: 0px;
+	margin-top: 0px;
+	
+}
+.menu li {
+	background-color: #11808A;
+	font-weight: bold;
+	font-size: 20px;
+	display: inline-block;
+	position: relative;
+	padding: 0px;
+	margin: 0px;
+	padding-top: 5px;
+	text-align: center;
+	border-width: 1px; 
+	border-style:solid;
+	border-left-color: #41DBFF;	
+	border-right-color: #143557;
+	height: 32px;
+	width: 100px;
+	font-style: normal;
+}
+.menu li a{
+	color: #E1EDFA;
+	text-decoration: none;
+}
+.menu li:first-child{
+	border-left-width: 0px;
+}
+.menu li:last-child{
+	border-right-width: 0px;
+}
+
+.text-list{
+	position: relative;
+	display: block;
+	margin: 0px;
+	right: 20%;
+	float: right;
+}
+
+/* list style*/
+.list_col{
+	background-color: #36495b;
+	display: block;
+	padding: 0px;
+	border-radius: 5px;
+}
+
+.col-4-1{
+	background-color: #36495b;
+	position: relative;
+	float: left;
+	display: block;
+	width: 25%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+.col-4-1 span{
+	position: relative;
+	display: inline-block;
+	border-width: 1px;
+	top: 0px;
+	left: 0px;
+	height: 35px;
+	bottom: 0px;
+	right: 0px;
+	padding-top: 10px;
+	text-align: center;
+	vertical-align: middle;
+	border-style: solid;
+	border-top-color: #465768;
+	color: #E1EDFA;
+	border-left-color: #465768;
+	border-bottom-color: #24313e;
+	border-right-color: #24313e;
+	display: block;
+	font-weight: bold;
+	font-size: 9px;
+	font-family: normal;
+}
+.col-4-1.first span{
+	border-left-width: 0px;
+}
+.col-4-1.last span{
+	border-right-width: 0px;
+	clear: right;
+}
+

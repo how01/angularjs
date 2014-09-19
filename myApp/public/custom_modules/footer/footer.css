@@ -1,0 +1,63 @@
+/*footer style*/
+.footer{
+	clear: both;
+	display: block;
+	position:absolute;
+	top: 100%;
+	color: #000;
+}
+.footer span.oi{
+	display: block;
+	margin-top: -25px;
+}
+
+
+/*help chat*/
+.helpChat{
+	height: 175px;
+	width: 280px;
+	position: fixed;
+	right: 50px;
+	bottom: 20px;
+	display: block;
+	background-color: #5ba0d0;
+	border-radius: 5px;
+}
+.helpChat>div{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	height: 130px;
+	width: 280px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-top: auto;
+	background-color: #fff;
+}
+.helpChat span{
+	font-size: 16px;
+}
+
+.helpChat .textcontainer{
+	height: 45px;
+	width: 100%;
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	height: 35px;
+}
+
+.textcontainer input{
+	border: 2px solid #ddd;
+	border-radius: 5px;
+	margin-left: 5px;
+	display: block;
+	position: static;
+}
+.helpChat div.showtext{
+	
+}
+

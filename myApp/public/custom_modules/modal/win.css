@@ -1,0 +1,69 @@
+/* modal window */
+.winwrapper {
+	display: none;
+	-webkit-animation:animations 2s ease-out;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: .5;
+	outline-color: #333;
+	background-color: #333;
+	color: #333;
+}
+.modal-win {
+	z-index: 99;
+	position: relative;
+	display: none;
+	border:1px solid #fff;
+	background-color: #fff;
+	box-shadow: #000 0px 0px 2px 2px;
+	width: 535px;
+	margin: 130px auto;
+	height: 175px;
+	border-radius: 5px;
+}
+.win-head{
+	min-height: 18px;
+	border-bottom: 1px solid #000;
+}
+.win-footer{
+	position: relative;
+	
+}
+.win-body{
+	position: relative;
+	height: 56px;
+}
+.btn-wrapper{
+	position: relative;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: right;
+}
+.btn-wrapper button{
+	width: 175px;
+	height: 35px;
+	border-radius: 5px;d
+	background-color: #3071a9;
+	border-color: #285e8e;
+}
+.btn-wrapper button:hover{
+	color: #333;
+	border-radius: 5px;
+	background-color: #e6e6e6;
+	border-color: #adadad;
+}
+.close-btn{
+	border-radius: 5px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	font-size: 20px;
+	border:none;
+	font-weight: bold;
+}
+

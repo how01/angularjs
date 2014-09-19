@@ -1,0 +1,47 @@
+/* tool tip*/
+.tipCt{
+	padding: 20px;
+}
+.tip{
+	width: 345px;
+	height: 125px;
+	position: relative;
+	display: block;
+	display: block;
+	padding: 0px;
+	margin: 0px;
+	border:1px solid #dfdddd;
+
+	box-shadow: 0 1px 5px 0px #000;
+}
+
+.tip .arrow{
+	top: -22px;
+	left: 50%;
+	margin-left: -22px;
+	position: absolute;
+	display: block;
+	border: 11px solid #CEC9C9;
+	padding: 0px;
+	margin: 0px;
+	border-left-color: transparent;
+	border-top-color: transparent;
+	border-right-color: transparent;
+}
+.tip div.arrow:after{
+	top:1px;
+	position: absolute;
+	display: block;
+	content: "";
+	margin-left: -10px;
+	border: 10px solid transparent;
+	padding: 0px;
+	margin-bottom: -2px;
+	border-bottom-color: #CEC9C9;
+}
+div.tip>h3{
+	padding: 0px;
+	margin: 0px;
+	background-color: #CEC9C9;
+}
+

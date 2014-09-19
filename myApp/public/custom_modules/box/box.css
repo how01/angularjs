@@ -1,0 +1,12 @@
+/* box model */
+h2~span{
+	line-height: 1.5;
+	/**/border-top: 10px solid #6795A3;
+	background-color: #ddd;
+}
+
+.inlineblock>span{
+	height: auto;
+	width: 20%;
+	display: inline-block;
+}
