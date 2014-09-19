@@ -33,11 +33,23 @@
 					//$(".winwrapper").show();
 					$(".winwrapper").fadeIn("slow");
 					$(".modal-win").slideDown('normal');
-				})
+				});
 				$(document).on('click','.close-btn',function(e){
 					//$(".winwrapper").show();
 					$(".winwrapper").fadeOut("slow");
 					$(".modal-win").slideUp('normal');
+				});
+				$(document).on('click','.clp_head',function(e){
+					e.stopPropagation();
+					$(this).toggle(
+							$(this).parent().animate({
+					   			height: '145px'
+					 		}, "slow"),
+							 $(this).parent().animate({
+							   height: '28px'
+							 }, "slow")	
+					);
+					
 				})
 				
 			});

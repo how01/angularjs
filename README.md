@@ -6,18 +6,24 @@ angular front client build
 1)项目架构 angularjs nodejs(nodemon) /ruby
 
 2)项目目录介绍：
---myApp
-  \n--bin  nodemon 启动脚本
-  --node_modules  nodejs 依赖模块
-  --public 应用目录
-  	--bower_modules
-  	--custom_modules 应用模块
-  	--data
-  	--app.js angularjs 模块脚本
+myApp
+├── bin/
+│   ├── www nodemon 启动脚本
+│
+├── node_modules/   nodejs 依赖模块 
+│   
+├── public/         应用目录
+│   ├── custom_modules/ 应用模块
+│   │   ├── header/
+│   │   ├── footer/
+│   │   └── form/         
+│   ├── app.js          应用脚本        
+│   └── data/ 数据服务
+│
+├── views/
+└── routes/
 
-  --routes
-  --views
-  app.js 项目配置脚本
-  package.json
+
+
 
 3)启动方式 cd ../bin && nodemon www  

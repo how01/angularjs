@@ -650,7 +650,7 @@ div.rightdirect span:before{
 }
 
 /* collapsed*/
-.collapsed{
+.clp_panel{
 	position: relative;
 	float: left;
 	margin: 40px;
@@ -671,6 +671,8 @@ div.rightdirect span:before{
 .clp_content{
 	padding: 15px;
 }
+.collapsed {
+	height: 28px;
 /**/
 .clear_float{
 	clear: both;
@@ -701,6 +703,15 @@ div.rightdirect span:before{
 .table-header span{
 	padding-left: 10px;
 }
-.table tr{
-	border: 1px solid #ADADAD;
+.table td{
+	border-top: 1px solid #000;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	margin: 0px;
+}
+.table th{
+	border-left-width: 0px;
+	border-right-width: 0px;
+	padding: 0px;
+	margin: 0px;
 }
