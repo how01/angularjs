@@ -7,7 +7,7 @@ angular front client build
 
 2)项目目录介绍：
 myApp
-├── bin/
+├── bin/<br>
 │   ├── startServer nodemon 启动脚本
 │
 ├── node_modules/   nodejs 依赖模块 
