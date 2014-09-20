@@ -1,0 +1,14 @@
+.chord path {
+  fill-opacity: .67;
+  stroke: #000;
+  stroke-width: .5px;
+}
+
+.graph-container{
+	background-color: #f9f9f9;
+	margin-top: 10px;
+}
+
+.graph{
+
+}

@@ -25,7 +25,35 @@ module.exports = function(grunt) {
                 files: ['app.css','custom_modules/**/*.css'],
                 tasks: ['concat']
             }
+        },
+        nodemon: {
+              dev: {
+                script: 'index.js',
+                options: {
+                  args: ['dev'],
+                  callback: function (nodemon) {
+                    nodemon.on('log', function (event) {
+                      console.log(event.colour);
+                    });
+                  },
+                  env: {
+                    PORT: '3000'
+                  },
+                  cwd: __dirname,
+                  ignore: ['node_modules/**'],
+                  ext: 'js,coffee',
+                  watch: ['server'],
+                  delay: 1000,
+                  legacyWatch: true
+                }
+              },
+              exec: {
+                options: {
+                  exec: 'less'
+                }
+            }
         }
+
     });
 
     // These plugins provide necessary tasks.

@@ -47,6 +47,10 @@ angular.module('myApp',['ngRoute','myList','HIT'])
 			templateUrl: 'custom_modules/table/table.html',
 			controller: 'myListController'
 		})
+		.when('/vendor', {
+			templateUrl: 'custom_modules/graph/graph_panel.html',
+			controller: 'diagramController'
+		})
 		.otherwise({ redirectTo: '/' });
 }])
 .controller('ListController', ['$scope', function ($scope) {

@@ -8,7 +8,7 @@ angular front client build
 2)项目目录介绍：
 myApp
 ├── bin/
-│   ├── www nodemon 启动脚本
+│   ├── startServer nodemon 启动脚本
 │
 ├── node_modules/   nodejs 依赖模块 
 │   
@@ -21,9 +21,9 @@ myApp
 │   └── data/ 数据服务
 │
 ├── views/
-└── routes/
+├── routes/
+└── Gruntfile.js 自动构建脚本
 
 
 
-
-3)启动方式 cd ../bin && nodemon www  
+3)启动方式 cd myApp/ && grunt
