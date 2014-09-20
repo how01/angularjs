@@ -1,12 +1,12 @@
-angularjs
-=========
-
-angular front client build
-实验性项目
-1)项目架构 angularjs nodejs(nodemon) /ruby
-
-2)项目目录介绍：
-myApp
+angularjs<br>
+=========<br>
+<br>
+angular front client build<br>
+实验性项目<br>
+1)项目架构 angularjs nodejs(nodemon) /ruby<br>
+<br>
+2)项目目录介绍：<br>
+myApp<br>
 ├── bin/<br>
 │   ├── startServer nodemon 启动脚本<br>
 │<br>
