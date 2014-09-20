@@ -2,7 +2,7 @@ angularjs
 =========
 
 angular front client build
-实验室项目
+实验性项目
 1)项目架构 angularjs nodejs(nodemon) /ruby
 
 2)项目目录介绍：
