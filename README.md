@@ -11,7 +11,7 @@ myApp<br>
 │   ├── startServer nodemon 启动脚本<br>
 │<br>
 ├── node_modules/   nodejs 依赖模块 <br>
-│   <br>
+│<br>
 ├── public/         应用目录<br>
 │   ├── custom_modules/ 应用模块<br>
 │   │   ├── header/<br>
@@ -19,7 +19,7 @@ myApp<br>
 │   │   └── form/      <br>   
 │   ├── app.js          应用脚本        <br>
 │   └── data/ 数据服务<br>
-│
+│<br>
 ├── views/<br>
 ├── routes/<br>
 └── Gruntfile.js 自动构建脚本<br>
