@@ -28,10 +28,7 @@
 .showsubmenu{
 	display: block;
 }
-.down{
-	border-top-width: 0px;
-	border-bottom: 4px solid;
-}
+
 .menu>li:hover{ 
 	background-color: #469DFC;
 }
@@ -46,6 +43,10 @@
 	border-top: 4px solid;
 	border-right: 4px solid transparent;
 	border-left: 4px solid transparent;
+}
+.down{
+	border-top-width: 0px ;
+	border-bottom: 4px solid;
 }
 
 /* header css */

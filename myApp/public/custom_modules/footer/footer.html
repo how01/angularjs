@@ -1,7 +1,23 @@
+<script type="text/javascript">
+	(function($){
+		$(document).ready(function(){
+			$('.help-icon').click(function(e){
+				e.stopPropagation();
+				$('.helpChat').addClass('up');
+			});
+			$('.down-icon').click(function(e){
+				e.stopPropagation();
+				$('.helpChat').removeClass('up');
+			});
+			
+		});
+	})(jQuery);
+</script>
 <div>
 	<span class="oi"> copyright &copy; angular.js google</span>
 </div>
 <div class="helpChat">
+	<span class="help-tools"><span class="help-icon"></span><span class="down-icon"></span></span>
 	<div>
 		<span>question to help</span>
 		<div class="showtext"></div>

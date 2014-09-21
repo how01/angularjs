@@ -5,57 +5,14 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
 
 	<link rel="stylesheet" type="text/css" href="app-all.css">
+	<script type="text/javascript" src="bower_modules/jquery/jquery-1.11.0.min.js"></script>
+
 	<script type="text/javascript" src="bower_modules/angular/angular.js"></script>
 	<script type="text/javascript" src="bower_modules/angular/angular-route.js"></script>
-	<script type="text/javascript" src="bower_modules/jquery/jquery-1.11.0.min.js"></script>
+	
 	<script type="text/javascript" src="bower_modules/d3/d3.js"></script>
 
 	<script type="text/javascript" src="app.js"></script>
-
-	
-	<script>
-		(function($) {
-			$(document).ready(function(){
-				$(document).on('click', '#test', function(e) {
-					e.stopPropagation();
-					$('#submenu').toggleClass('showsubmenu');
-					$('.caret').toggleClass('down');
-				}); 
-				$(document).on('click', document, function(e) {
-					$('#submenu').removeClass('showsubmenu');
-					$('.caret').removeClass('down');
-				});
-				$(document).on('click','.tab li',function(e){
-					e.stopPropagation();
-					$('.tab>li.active').removeClass('active');
-					$(e.currentTarget).addClass('active');
-				});
-				$(document).on('click','.btn',function(e){
-					//$(".winwrapper").show();
-					$(".winwrapper").fadeIn("slow");
-					$(".modal-win").slideDown('normal');
-				});
-				$(document).on('click','.close-btn',function(e){
-					//$(".winwrapper").show();
-					$(".winwrapper").fadeOut("slow");
-					$(".modal-win").slideUp('normal');
-				});
-				$(document).on('click','.clp_head',function(e){
-					e.stopPropagation();
-					$(this).toggle(
-							$(this).parent().animate({
-					   			height: '145px'
-					 		}, "slow"),
-							 $(this).parent().animate({
-							   height: '28px'
-							 }, "slow")	
-					);
-					
-				})
-				
-			});
-		})(jQuery);
-</script>
 </head>
 <body ng-app="myApp">
 	<nav>

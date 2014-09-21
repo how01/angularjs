@@ -1,3 +1,4 @@
+<!-- collapse panel -->
 <div class="clp_panel">
 	<div class="clp_head">title line</div>
 	<div class="clp_content">
@@ -25,3 +26,22 @@
 		<p>you can click button to collapsed panel
 	</div>
 </div>
+<!-- jquery -->
+<script >
+	(function($){
+		$(document).ready(function(){
+			$(document).on('click','.clp_head',function(e){
+					e.stopPropagation();
+					$(this).toggle(
+							$(this).parent().animate({
+					   			height: '145px'
+					 		}, "slow"),
+							 $(this).parent().animate({
+							   height: '28px'
+							 }, "slow")	
+					);
+					
+				})
+		});
+	})(jQuery);
+</script>

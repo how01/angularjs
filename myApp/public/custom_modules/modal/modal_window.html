@@ -1,3 +1,19 @@
+<script >
+(function($){
+	$(document).ready(function(){
+		$(document).on('click','.btn',function(e){
+					//$(".winwrapper").show();
+					$(".winwrapper").fadeIn("slow");
+					$(".modal-win").slideDown('normal');
+				});
+				$(document).on('click','.close-btn',function(e){
+					//$(".winwrapper").show();
+					$(".winwrapper").fadeOut("slow");
+					$(".modal-win").slideUp('normal');
+				});
+	});
+})(jQuery);
+</script>
 <div>
 	<button class="btn">show window</button>
 	<div class="winwrapper">

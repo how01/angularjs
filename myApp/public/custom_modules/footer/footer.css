@@ -18,10 +18,15 @@
 	width: 280px;
 	position: fixed;
 	right: 50px;
-	bottom: 20px;
+	bottom: -150px;
 	display: block;
 	background-color: #5ba0d0;
 	border-radius: 5px;
+	transition: .6s ease-in-out bottom;
+}
+.helpChat.up{
+	bottom: 20px;
+
 }
 .helpChat>div{
 	position: absolute;
@@ -37,9 +42,33 @@
 	margin-top: auto;
 	background-color: #fff;
 }
+
+.help-tools{
+	position: absolute;
+	right: 5px;
+	top: 1px;
+}
+
+.help-icon:before{
+	content:"\e085";
+	font-family: 'glyphicons';
+	cursor: pointer;
+	color: #fff;
+}
+
+.down-icon:before{
+	padding-left: 5px;
+	cursor: pointer;
+	font-family: 'glyphicons';
+	content:"\e159";
+	color: #fff;
+}
+
+
 .helpChat span{
 	font-size: 16px;
 }
+
 
 .helpChat .textcontainer{
 	height: 45px;

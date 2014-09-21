@@ -1,5 +1,13 @@
 <script type="text/javascript">
-	alert('test');
+	(function($){
+		$(document).ready(function(){
+			$(document).on('click','.tab li',function(e){
+					e.stopPropagation();
+					$('.tab>li.active').removeClass('active');
+					$(e.currentTarget).addClass('active');
+				});
+		});
+	})(jQuery);
 </script>
 <div>
 	<ul class="tab">
