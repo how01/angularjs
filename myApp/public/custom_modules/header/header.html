@@ -1,12 +1,12 @@
 <script type="text/javascript">
 	(function($) {
 			$(document).ready(function(){
-				$(document).on('mouseenter', '.menu li', function(e) {
+				$(document).on('mouseenter', '.menu>li', function(e) {
 					e.stopPropagation();
 					$(this).find('.dropmenu').toggleClass('showsubmenu');
 					$(this).find('.caret').toggleClass('down');
 				}); 
-				$(document).on('mouseleave', '.menu li', function(e) {
+				$(document).on('mouseleave', '.menu>li', function(e) {
 					e.stopPropagation();
 					$(this).find('.dropmenu').removeClass('showsubmenu');
 					$(this).find('.caret').removeClass('down');
@@ -23,6 +23,13 @@
 				<li>back</li><li>forward</li><li>top</li>
 			</ul>
 		</li><li><a href="#/table">Sponsor</a>
+				<ul class="dropmenu">
+					<li>action </li>
+					<li>some action</li>
+					<li>some thing here</li>
+					<li class="divider"></li>
+					<li >separated link</li>
+				</ul>
 		</li><li><a href="#/vendor">vendors</a>
 		<!--
 		</li><li><a href="#">Product</a>
