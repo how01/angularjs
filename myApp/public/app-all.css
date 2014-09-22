@@ -380,25 +380,27 @@ div.rightdirect span:before{
 	border-top-width: 0px ;
 	border-bottom: 4px solid;
 }
+
 .menu >li {
-	background-color: #11808A;
-	font-weight: bold;
-	font-size: 20px;
 	display: inline-block;
 	position: relative;
 	padding: 0px;
 	margin: 0px;
-	padding-top: 5px;
+	height: 38px;
+	width: 10%;
 	text-align: center;
+}
+.menu>li>a{
+	display: block;
+	line-height: 2;
 	border-width: 1px; 
 	border-style:solid;
 	border-left-color: #41DBFF;	
 	border-right-color: #143557;
-	height: 32px;
-	width: 100px;
 	font-style: normal;
-}
-.menu li a{
+	background-color: #11808A;
+	font-weight: bold;
+	font-size: 20px;
 	color: #E1EDFA;
 	text-decoration: none;
 }
