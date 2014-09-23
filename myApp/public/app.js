@@ -12,7 +12,7 @@ angular.module('myApp',['ngRoute','myList','HIT'])
 			controller: 'FormCtrl'
 		})
 		.when('/', {
-			templateUrl: 'custom_modules/list/formula.html',
+			templateUrl: 'custom_modules/carousel/carousel.html',
 			controller: 'myListController'
 		})
 		.when('/hit', {
@@ -31,8 +31,8 @@ angular.module('myApp',['ngRoute','myList','HIT'])
 			templateUrl: 'custom_modules/tooltip/tooltip.html',
 			controller: 'TabController'
 		})
-		.when('/carousel', {
-			templateUrl: 'custom_modules/carousel/carousel.html',
+		.when('/d3', {
+			templateUrl: 'custom_modules/list/formula.html',
 			controller: 'TabController'
 		})
 		.when('/modal', {
