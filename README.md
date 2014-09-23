@@ -27,3 +27,4 @@ myApp<br>
 <br>
 <br>
 3)启动方式 cd myApp/ && grunt
+4)访问地址：http://localhost:9080/

@@ -69,7 +69,7 @@
 	
 }
 /* top menu */
-.menu>li:hover{ 
+.menu li a:hover{ 
 	background-color: #D8D8D8;
 }
 
