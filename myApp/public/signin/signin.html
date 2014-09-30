@@ -1,0 +1,49 @@
+<div class="signwrapper">
+	<form class="signform">
+		<div class="textwrapper">
+			<div >
+				<label>Email:</label>
+				<input  type="text" name="email" placeholder="email" ng-model="user.email">
+			</div>
+			<div>
+				<label>Password:</label>
+				<input type="text" name="password" type="password" placeholder="password" ng-model="user.password">
+			</div>
+		</div>
+		<div class="textwrapper">
+			<div>
+				<label>Safe email:</label>
+				<input type="text" name="safeemaill" placeholder="for get back password" ng-model="user.safeemail">
+			</div>
+			<div>
+				<label>Name:</label>
+				<input type="text" ng-model="user.name">
+			</div>
+		</div>
+		<div class="groupbox">
+			<label>
+				<input type="checkbox" ng-model="user.hobby.val0" ng-true-value="1">Option one is this and that—be sure to include why it's great
+			</label>
+			<label>
+				<input type="checkbox" ng-model="user.hobby.val1" ng-true-value="2">Option two is disabled
+			</label>
+		</div>
+		<div class="groupbox">
+			<label>
+			<input type="radio" ng-model="user.major" value="1" >Option one is this and that—be sure to include why it's great
+			</label>
+			<label>
+			<input type="radio" ng-model="user.major" value="2">Option two can be something else and selecting it will deselect option one
+			</label>
+			<label>
+			<input type="radio" ng-model="user.major" value="3">Option three is disabled
+			</label>
+		</div>
+		<div class="sumbitbox">
+			<label class="remenber">
+				<input type="checkbox"/> Remember Me
+			</label>
+			<button>Sign in</button>
+		</div>
+	</form>
+</div>

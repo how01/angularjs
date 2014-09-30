@@ -1,6 +1,11 @@
-'use strict'
+'use strict';
 
-angular.module('myApp',['ngRoute','myList','HIT'])
+angular.module('myApp',['ngRoute',
+
+	/* custom module */
+	'myList',
+	'HIT',
+	'SignIn'])
 .config(['$routeProvider',function ($routeProvider) {
 	$routeProvider
 		.when('/login', {
@@ -50,6 +55,14 @@ angular.module('myApp',['ngRoute','myList','HIT'])
 		.when('/vendor', {
 			templateUrl: 'custom_modules/graph/graph_panel.html',
 			controller: 'diagramController'
+		})
+		.when('/position', {
+			templateUrl: 'custom_modules/box/boxmodel.html',
+			controller: 'diagramController'
+		})
+		.when('/signin', {
+			templateUrl: 'signin/signin.html',
+			controller: 'SigninController'
 		})
 		.otherwise({ redirectTo: '/' });
 }])

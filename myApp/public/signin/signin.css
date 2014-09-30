@@ -1,0 +1,68 @@
+.signwrapper{
+	background-color: #fff;
+	height: 500px;
+}
+.signform{
+	display: block;
+	width: 675px;
+	margin: auto;
+	
+}
+.signform>div{
+	display: inline-block;
+	width: 100%;
+	margin: 10px 0;
+}
+
+
+
+.signform>div>label{
+	display: block;
+}
+
+
+.signform input[type="text"]{
+	height: 26px;
+	border-radius: 4px;
+	width: 175px;
+}
+.textwrapper>div{
+	width: 50%;
+	float: left;
+}
+
+
+
+.textwrapper>div>label{
+	display: inline-block;
+	width: 85px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 13px;
+}
+.groupbox,.sumbitbox{
+	clear: both;
+	padding-left: 85px;
+	font-size: 15px;
+}
+
+.remenber{
+	display: inline-block !important;
+}
+
+.sumbitbox{
+	padding-top: 55px;
+	padding-bottom: 15px;
+}
+.sumbitbox>button{
+	margin-left: 35px;
+	border: 1px solid #ddd;
+	height: 35px;
+	width: 75px;
+	cursor: pointer;
+	border-radius: 5px;
+	background-color: #fff;
+}
+.sumbitbox>button:hover{
+	background-color: #ddd;
+}	

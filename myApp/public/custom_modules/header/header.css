@@ -43,13 +43,17 @@
 .dropmenu li:hover{
 	background-color: #ddd;
 }
-.dropmenu li:first-child{
-	/*border-radius: 5px 5px 0px 0px;*/
-}
+
 .dropmenu li:last-child{
-	border-bottom-width: 0px;
+	border-bottom-width: 0;
 	/*border-radius: 0 0px 5px 5px;*/
 }
+
+.dropmenu li a{
+	text-decoration: none;
+	color: #fff;
+}
+
 .showsubmenu{
 	display: block;
 }

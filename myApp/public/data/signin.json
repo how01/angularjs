@@ -1,0 +1,10 @@
+{
+	"sigin":{
+		"email":"234@test.com",
+		"password":"明文",
+		"safeemail":"12306@ticket.com",
+		"name":"interview",
+		"hobby":["1","2"],
+		"major":"1"
+	}
+}

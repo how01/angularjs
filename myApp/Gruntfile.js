@@ -14,7 +14,7 @@ module.exports = function(grunt) {
 		concat: {
 			dist: {
 				files: [{
-					src: ['public/app.css', 'public/custom_modules/**/*.css'],
+					src: ['public/app.css', 'public/custom_modules/**/*.css','public/signin/*.css'],
 					dest: 'public/app-all.css'
 				}],
 				options: {
@@ -24,7 +24,7 @@ module.exports = function(grunt) {
 		},
 		watch: {
 			scripts: {
-				files: ['public/app.css', 'public/custom_modules/**/*.css'],
+				files: ['public/app.css', 'public/custom_modules/**/*.css','public/signin/*.css'],
 				tasks: ['concat']
 			}
 		},

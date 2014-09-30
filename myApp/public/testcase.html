@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Angular Js Site</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+
+	<link rel="stylesheet" type="text/css" href="app-all.css">
+
+	
+	<script type="text/javascript" src="bower_modules/jquery/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="jQuery.XDomainRequest.js"></script>
+	<script type="text/javascript">
+		(function($){
+			$(document).ready(function(){
+				var getUserList = function(){
+					debugger;
+					$.ajax({
+					  url: 'https://rightpond.requisight.com/api/investment/FIDELITY/FIDELITY%20FREEDOM%20K®%202020%20FUND%20(FFKDX)',
+					  crossDomain:true,
+					  headers: {'X-Auth-Token':'support.rightpond@requisight.com:1411804727389:df087bb42bdf41f9d8757f9a14d7d72c' },
+					  type: 'GET'
+					}).done(function(data) {
+					  console.log(data);
+					});
+				}
+				
+				getUserList();
+			});
+		})(jQuery);
+	</script>
+</head>
+<body ng-app="myApp">
+	test
+</body>
+</html>

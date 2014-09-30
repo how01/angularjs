@@ -6,10 +6,11 @@
 
 /* major body css fixed */
 html,body{
-	margin: -10px 50px 0px 50px;
+	margin: -10px 50px 0 50px;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	padding: 0px;
+	padding: 0;
 	background-color: #E5EBE3;
+	/*text-align: center;*/
 }
 
 /* main view css*/
